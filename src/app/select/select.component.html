@@ -1,0 +1,115 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+ 
+    <div class="container-fluid" >
+    
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       
+      <h1 style="font-size: 30px; color: rgb(235, 75, 75); "> Sohar University</h1>&nbsp;
+      
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: black; font-size: 20px;">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"  style="color: black; font-size: 20px;">Exam</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"  style="color: black; font-size: 20px;">Result</a>
+          </li>
+        </ul>
+     
+      </div>
+
+  
+   
+      <div class="d-flex align-items-center">
+     
+        <a class="text-reset me-3" href="#">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+  
+
+        <div class="dropdown">
+        
+            
+         
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            <li>
+              <a class="dropdown-item" href="#">Some news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </div>
+       
+       
+            <img
+              src="assets\user-follower-icons-social-media-notification-icon-speech-bubbles-vector-illustration_56104-847.avif"
+              class="rounded-circle"
+              height="40"
+              width="40"
+              alt="Black and White Portrait of a Man"
+              loading="lazy" />
+      
+       
+        </div>
+      </div>
+     
+    
+   
+  </nav>
+
+  <div class="center-container">
+    <div class="border-round border-1 surface-border p-4 surface-card" style="background-color: bisque; border-radius: 9px; text-align: center; width: 600px; height: 200px;">
+      <div>
+        <h2 style="font-size: 50px;">Select User</h2>
+        <select [(ngModel)]="selectedUser" style="height: 30px; width:200px;">
+          <option *ngFor="let user of users" [value]="user.id" >{{ user.name }}</option>
+        </select>
+        <button [disabled]="!selectedUser" (click)="startQuestionnaire()" style="height: 30px; width:70px; background-color: rgb(243, 153, 153); color: white; font-size: 15px;"><b>Next</b></button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
